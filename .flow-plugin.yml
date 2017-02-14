@@ -24,3 +24,9 @@ outputs:
   - name: FLOW_ESLINT_RENDER_URL
 
 script_path: ./run.sh
+
+template: |
+  <div style="position: relative;height: 500px;">
+    <a href="${FLOW_ESLINT_RENDER_URL}" style="position: absolute;top: 12px;right: 12px;z-index: 10;display: block; padding: 8px 14px; background: #81BF15; color: #fff;" target="_blank">Expand</a>
+    <iframe style="width: 100%;border: none;height: 100%;" src="${FLOW_ESLINT_RENDER_URL}"></iframe>
+  </div>
