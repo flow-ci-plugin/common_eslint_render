@@ -1,0 +1,26 @@
+name: eslint_plugin_render
+version: 0.0.1
+language: 
+description: The pluggable linting utility for JavaScript and JSX.
+tags:
+ - eslint
+ - plugin
+ - nodejs
+ - analyzer
+ - format
+
+public: true
+
+# clone_in_docker: false
+
+inputs:
+  - name: FLOW_ESLINT_LOG_PATH
+    editable: true
+
+  - name: FLOW_PROJECT_ID
+    editable: false
+
+outputs:
+  - FLOW_ESLINT_RENDER_URL
+
+script_path: ./run.sh
