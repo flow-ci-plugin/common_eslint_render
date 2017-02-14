@@ -21,6 +21,6 @@ inputs:
     editable: false
 
 outputs:
-  - FLOW_ESLINT_RENDER_URL
+  - name: FLOW_ESLINT_RENDER_URL
 
 script_path: ./run.sh
